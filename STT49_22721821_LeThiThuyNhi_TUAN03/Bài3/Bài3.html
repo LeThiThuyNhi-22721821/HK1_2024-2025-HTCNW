@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bài 3</title>
+    <style>
+    * {
+        padding: 0px; 
+        margin: 0px auto;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .wrapper{
+        width: 960px;
+        height: auto;
+        background-color: white;
+        border: 1px solid black;
+    
+    }
+    header{
+        width: 100%;
+        height: 100px;
+        background-color: rgb(175, 88, 61);
+        line-height: 120px;
+    }
+    header h1{
+        color: rgb(23, 107, 34);
+        font-size: 30px;
+        text-shadow: -5px -5px 5px rgb(183, 204, 181);
+        margin-left: 40px;
+    }
+    nav ul li a:hover{
+        color:rgb(17, 203, 178);
+    }
+    nav{
+        width: 100%;
+        height: 50px;
+        background-color: rgb(244, 239, 239);
+    }
+    nav ul li {
+        display:inline-block;
+        width: 100px;
+    }
+    nav ul li a{
+        font-weight: bolder;
+        text-decoration: none;
+        font-size:20px;
+        padding: 20px;
+        line-height: 50px;
+        color:rgb(214, 128, 15)
+    }
+    .header-bottom{
+        height: 150px;
+        background-repeat: repeat-x;
+    }
+    .content{
+        display:flex;
+    }
+    .content section{
+        width: 80%;
+        border-right: 1px solid gray;
+    }
+    .content aside{
+        width: 60%;
+    }
+    .content section h2{
+        color:rgb(196, 121, 23);
+        padding-bottom: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .content section p{
+        padding-bottom: 40px;
+        color:rgb(243, 199, 142);
+        font-style:italic;
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    section{
+        padding:30px;
+    }
+    form{
+        display:flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    form input{
+        border: 0;
+        border-bottom: 1px solid gray;
+        background-color: transparent;
+        font-size: 16px;
+        padding: 10px 0;
+        width: 100%;
+    }
+    form button{
+        margin: 0;
+        width: fit-content;
+        padding: 5px;
+        border-radius: 2px;
+        background-color: darkgreen;
+        color:aliceblue;
+    }
+    aside{
+        padding: 20px;
+    }
+    aside h2{
+        color:rgb(185, 35, 35);
+        font-size: 25px;;
+    }
+    aside .aside1{
+        padding: 20px;
+        background-color: rgb(255, 222, 179);
+        border-radius:30px 30px 0 0;
+    } 
+    aside .aside1 ul{
+        padding-left:40px;
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 20px;
+        list-style: square;
+        color:rgb(113, 16, 16)
+    }
+    aside .info{
+        padding: 30px;
+    }
+    aside .info img{
+        padding: 5px;
+        border: 1px solid gray;
+        margin-top:  5px;
+    }
+    aside .info p{
+        font-size: 20px;
+        text-align: justify;
+
+    }
+    footer{
+        width: 100%;
+        height: 50px;
+        background-repeat: repeat-x;
+        background-color: antiquewhite;
+    }
+    footer p{
+        color:black;
+        line-height: 30px;
+        text-align: center;
+        font-size: 18px;
+        padding-top: 20px;
+    }
+    p{
+        margin-left: 30px; 
+        font-style: italic;
+    }
+
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>AUTUMN TRAVEL COMPANY</h1>
+           
+        </header>
+        <nav>
+            <ul>
+                <li><a href ="#">Home</a></li>
+                <li><a href ="#">About</a></li>
+                <li><a href ="#">Products</a></li>
+                <li><a href ="#">Services</a></li>
+                <li><a href ="#">Order</a></li>
+            </ul> 
+            <img src="../Bài3/header.png" Align="left" width="100%" height="150px" >
+        </nav>
+        <div class="header-bottom">
+        </div>
+        <div class="content">
+            <section>
+                <h2><i>Sign up for membership benefits</h2>
+                <p>	Our philisophical are transparency, respect,
+                    formality <br> and responsibility. Our stimulus is your enthusiasm. <br>
+                    Our motto is your satisfation.</p>
+                <form action="" method="get">
+                    <input type="text" name="name" id="name" placeholder="User name">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <input type="password" name="pass" id="pass" placeholder="Password">
+                    <input type="password" name="retypepassword" id="retypepassword" placeholder="Retype password">
+                    <button type="button">SIGN ME UP</button>
+
+                </form>
+            </section>
+            <aside>
+                <div class="aside1">
+                    <h2>Links</h2>
+                    <ul>
+                        <li>Make your our tour</li>
+                        <li>Maldives Tours</li>
+                        <li>Natures & Adventure</li>
+                        <li>Europes Tours</li>
+                        <li>VietNam Tours</li>
+                        <li>Rusia Tours</li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <h2>More info</h2>
+                    <p><img src="../Bài3/lá vàng.png" alt="anh" width="80px" height="auto"> Our purpose is the client who gives to us the opportunites to serve and to make known the reality arround the world </p>
+                </div>
+
+            </aside>
+        </div>
+        <footer>    
+            <p> &#169 2017 Software Engineering Department Test Date 16 Sep 2017</p>
+    </footer>
+    </div>
+</body>
+</html>

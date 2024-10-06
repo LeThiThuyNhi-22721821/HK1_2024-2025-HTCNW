@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title> Bài 2</title>
+    <style>
+        *{
+            padding:0px;
+            margin:0px auto;
+        }
+        .wrapper{
+            width: 960px;
+            background-color: aliceblue;
+        }
+        header{
+            background-color: #294e79;
+            position: relative;
+        }
+        header h1{
+            position: absolute;
+            top:50px;
+            left: 140px;
+            color: white;
+        }
+        header h4{
+            position: absolute;
+            top: 90px;
+            left: 150px;
+            color: white;
+        }
+        header #form1{
+            top:10px;
+            right:10px;
+            position: absolute;
+        }
+        nav{
+            position: absolute;
+            bottom: 10px;
+            right:10px;
+
+        }
+        .menu li{
+            background-color: rgb(236, 172, 181);
+            text-align: center;
+            display:inline-table;
+            height: 50px;
+            line-height: 50px;
+            padding-left: 10px;
+            padding-right: 10px;
+
+        }
+        .menu li a{
+            color:rgb(96, 89, 89);
+            text-decoration:dotted;
+            font-weight: bolder;
+
+        }
+        .menu li:hover{
+            background-color: beige;
+        }
+        .menu li:hover>a{
+            font-size: large;
+            color:chocolate;
+        }
+        .content{
+            height:500px;
+            width: 960px;
+            background-color: rgb(236, 244, 251);
+        }
+        footer{
+            background-color: #294e79;
+            position: relative;
+            height: 50px;
+            width: 960px;
+        }    
+        footer p {
+            position: absolute;
+            color: white;
+            font-size: smaller;
+            left:10px;
+            top: 10px;
+        }
+        .section{
+            width: 70%;
+            height: 100%;
+            float: left;
+            background-color:aliceblue;
+        }
+        h2{
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            margin-left:  1em;
+            margin-right: 1em;
+        }
+        .section-1{ 
+            width: 60%;
+            height: 100%;
+            float: left;
+            background-color:rgb(236, 244, 251)
+        }
+        .section-1 p{
+            color:rgb(221, 67, 67);
+            text-shadow:#49b635 4px 5px 4px;
+            position:relative;
+            left:10px;
+            top: 10px;
+            text-align: justify;
+            margin-right:  50px;
+        }
+        .section-2{
+            width: 40%;
+            height: 100%;
+            float: right;
+            background-color:rgb(236, 244, 251);
+            
+        }
+        aside{
+            width: 30%;
+            height:400px;
+            float:right;
+            background-color:rgb(233, 224, 224);
+
+            
+        }
+        aside a{
+            margin-left: 160px;
+            text-decoration: none;
+            color:#1e528e;
+            text-align: justify;
+        }
+
+        h3{
+            color: rgb(21, 21, 21);
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            margin-left:  1em;
+            margin-right: 1em;
+        }
+        hr{
+            display:grid;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            margin-left: 0.5em ;
+            margin-right:0.5em;
+            border-style: dashed;
+        }
+        p{
+            text-align: justify;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            margin-left:  1em;
+            margin-right: 1em;
+        }
+        address{
+            text-align: justify;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            margin-left:  1em;
+            margin-right: 1em;
+            text-align: justify;
+        }
+        input[type="text"],
+        select {
+            width: 90%;
+            padding: 4px;
+            text-align: justify;
+            border: 1px solid #7e7777;
+            border-radius: 4px;
+            
+        }
+        form{
+            text-align: justify;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            margin-left:  1em;
+            margin-right: 1em;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="../img/flower.png" alt="" srcset="">
+            <h1>FlowerBox 360</h1>
+            <h4>...to get your daily close of luxury roses!</h4>
+            <form action="" method="post"id="form1">
+                <input type="text" name="" id="" placeholder="Search the site...">
+                <button type="">GO</button>
+            </form>
+            <nav>
+                <ul class="menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Promotion</a></li>
+                    <li><a href="">Gift Baskets</a></li>
+                    <li><a href="">Flowers Services </a></li>
+                    <li><a href="">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content">
+            <section class="section">
+                <h2>Why Not Contact Us Today!</h2>
+                <hr>
+                
+            <section class="section-1">
+                <p>For FlowerBox 360 shopers, that means not only can you send your friends and loves ones the highest
+                    quality flowers found on online, but thatt you can do so at a great value.</p>
+                <br>
+                <form>
+                    Name:
+                    <input type="text" name="name" value="">
+                    Email:
+                    <input type="text" name="Email" value="">
+                    Telephone:
+                    <input type="text" name="Tele" value="">
+                    Subject:
+                    <input type="text" name="Sub" value="">
+                    Message:
+                    <textarea id="Mess" name="comments" rows="3" cols="40"></textarea>
+                    <br><br>
+
+                    &nbsp;
+                    <button type="submit">Submit</button>
+                    &nbsp;
+                    <button type="Reset">Reset</button>
+                </form>
+                
+            </section>
+
+            <section class="section-2">
+                <h3>Why Not Contact Us Today!</h3>
+                <hr>
+                <p>Openationg Hours:
+                <p>Monday-Friday:9:000am-5:00pm</p>
+                <p>Saturday:9:00am-1.00pm.</p>
+                <p>Sunday:CLosed (No Deliveries)</p>
+                <p>ORDER ONLINE 24/7</p>
+                <br>
+                <p>Software Engineering Dept.</p>
+                <p>Information Technology Faculty</p>
+                <p>First Floor, H Building</p>
+                    <br>
+                <address> 12 Nguyen Van Bao, Ward 4, Go Vap District, Ho Chi Minh City
+                <br>Tell: 0283.8940 390
+                <br>Fax: 0283.9940 954 </address>
+                    
+            </section>
+        </section>
+            <aside>
+                <h3>Discounts & Specials</h3>
+                <hr>
+                <img src="../img/rose.png" alt="" srcset="" Align="middle" width="100%" >
+                <p> FlowerBox 360 offers many great discounts throught the year, from coupons and coupon codes, to promo codes and other savings. We also offer military flower discounts to our wonderfull troppps!</p>
+                <a href="#top" ><b>Read more >></b></a>
+            </aside>
+        </div>
+        <footer>
+            <p>Copyright@2017 - All Rights Reserved -<span style="color:rgb(52, 194, 194)"> Software Engineering Department - Industrial University of Ho Chi Minh City</span></p>
+        </footer>
+    </div>
+</body>
+</html>
