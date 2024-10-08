@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2b</title>
+    <script src="../js/bai2b.js"></script>
+    <style>
+        *{
+            margin: auto;
+            padding: auto;
+        }
+        .container{
+            width: 700px;
+            height: 200px;
+            border: 1px solid black;
+        }
+        #log1{
+            color: red;
+        }
+        #log2{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="" class="f1" style="text-align: center; margin-top: 20px;">
+            <table>
+                <tr>
+                    <td colspan="3" style="text-align: center;">
+                        <h2 >PHÉP TÍNH CƠ BẢN</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="1"> 
+                        <label for="">Nhập Số thứ 1</label>
+                    </td>
+                    <td colspan="2">
+                        <input type="text" name="so1" id="so1">
+                    </td>
+                    <td>
+                        <p id="log1">(*)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Nhập Số thứ 2</label>
+                    </td>
+                    <td colspan="2">
+                        <input type="text" name="so2" id="so2">
+                    </td>
+                    <td>
+                        <p id="log2">(*)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">
+                        <input onclick="Sum()" id="cong" type="button" value="Cong">
+                        <input onclick="Tru()" type="button" value="Tru">
+                    </td>
+                    <td style="text-align: left;">
+                        <input onclick="Nhan()" type="button" value="Nhan">
+                        <input onclick="Chia()" type="button" value="Chia">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: right;">
+                        <label for="">Kết quả</label>
+                    </td>
+                    <td>
+                        <input type="text" name="" id="kq">
+                    </td>
+                    
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

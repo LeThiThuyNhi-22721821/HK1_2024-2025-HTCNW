@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2c</title>
+    <script src="../js/bia2c.js"></script>
+    <style>
+        *{
+            margin: auto;
+            padding: auto;
+        }
+        ul li{
+            margin-left: -30px;
+            list-style-type: none;
+        }
+        #log{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>Chọn loại cafe:</h3>
+        <ul>
+            <li><input id="checkb1" type="checkbox" name="trungnguyen" id="trungnguyen">Trung Nguyên</li>
+            <li><input id="checkb2" type="checkbox" name="mekong" id="mekong">Me Kong</li>
+            <li><input id="checkb3" type="checkbox" name="newlife" id="newlife">New life</li>
+            <li><input id="checkb4" type="checkbox" name="oceanblue" id="oceanblue">Ocean Blue</li>
+            <li><input id="checkb5" type="checkbox" name="bluespase" id="bluespace">Blue Space</li>
+            <li><input id="checkb6" type="checkbox" name="windows" id="windows">Windows</li>
+            <li><input id="tick" onclick="Chon()" type="button" value="Chọn"></li>
+        </ul>
+        <p>Bạn đã chọn: <p id="log"></p></p>        
+    </div>
+</body>
+</html>

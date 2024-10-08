@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 2d</title>
+    <style>
+        *{
+            margin: auto;
+            padding: auto;
+        }
+        .container{
+            width: 500px;
+            height: 300px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="" id="f1">
+            <table>
+                <tr>
+                    <td></td>
+                    <td colspan="1" style="text-align: center;">
+                        <h2>FORM ĐỊNH DẠNG</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Họ và tên</label>
+                    </td>
+                    <td>
+                        <input type="text" name="hovaten" id="hovaten">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Chọn</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="bg" id="bg">Background
+                        <input type="radio" name="font" id="font">Font
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Chọn màu</label>
+                    </td>
+                    <td>
+                        <select name="" id=""id="colorSelect" >
+                            <option value="chonmau">Chon mau ...</option>
+                            <option id="pink" value="pink">pink</option>
+                            <option id="red" value="red">reds</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="button">Đổi màu</button>
+                        <button type="button">Cacles</button>
+                    </td>
+                </tr>
+            </table>
+            <p>Bạn rất hiếu kỳ, thích cống hiến, quan tâm đến việc đang làm và
+                ít bị chi phối bởi những thứ khác. Tuy nhiên, bạn sẽ thành công nếu kiên nhẫn 
+                hơn. Bạn tin rằng có tình yêu sét đánh và ấn tượng đầu tiên là quan trọng nhất. 
+                Bạn luôn muốn giữ hòa khí nhưng tình cảm rất rõ ràng, chỉ có thể yêu hoặc ghét, 
+                không có sự mập mờ</p>
+        </form>
+    </div>
+    <script>
+        document.getElementById('f1s').addEventListener('button', function(event) {
+    event.preventDefault(); // Prevent form submission
+    var formData = new FormData(this);
+    var backgroundColor = formData.get('bg');
+    var textColor = formData.get('font');
+    
+    document.body.style.backgroundColor = backgroundColor; // Change background color
+    document.body.style.color = textColor; // Change text color
+  });
+    </script>
+</body>
+</html>

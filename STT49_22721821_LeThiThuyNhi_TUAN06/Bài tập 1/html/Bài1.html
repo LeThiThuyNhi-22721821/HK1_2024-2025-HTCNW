@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="22721821_Lê Thị Thùy Nhi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 1</title>
+</head>
+<style>
+    table, tr, td {
+        border: 1px solid black;
+    }
+</style>
+
+<body>
+    <table style="margin: auto; text-align: center; ">
+        <tr>
+            <td colspan="3" style="border-bottom: 1px solid rgb(223, 102, 122);   border-right: 1px solid rgb(223, 102, 122); " >
+                <h3 style="color: rgb(223, 102, 122);">DANH SÁCH SINH VIÊN</h3>
+            </td>
+        </tr>
+        <tr>
+            <td>MSSV</td>
+            <td>Tên</td>
+            <td>Lớp</td>
+        </tr>
+        <tr> 
+            <td id="mssv"></td>
+            <td id="ten"></td>
+            <td id="lop"></td>
+        </tr>
+    </table>
+</body>
+<script>
+
+let a= prompt("Nhập mã số sinh viên ")
+let b= prompt ("Nhập tên")
+let c=prompt("Nhập lớp")
+document.getElementById("mssv").innerHTML =a
+document.getElementById("ten").innerHTML =b
+document.getElementById("lop").innerHTML =c
+   
+</script>
+</html>
