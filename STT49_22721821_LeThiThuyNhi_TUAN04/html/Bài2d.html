@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="22721821" content="Lê Thị Thùy Nhi">
+    <title>Bài tập 2d</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form action="/action_page.php" class="was-validated">
+            <div class="row">
+                <div class="col-4">
+                    <label for="" class="form-lable pb-3">First name</label>
+                    <input type="text" class="form-control" name="fname" id="fname" placeholder="First name" required>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please choose First name.</div>
+                </div>
+                <div class="col-4">
+                    <label for="" class="form-lable pb-3">Last name</label>
+                    <input type="text" class="form-control" name="lname" id="lname" placeholder="Last name" required>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please choose Last name.</div>
+                </div>
+                <div class="col-4">
+                    <label for="" class="form-lable pb-3">Username</label>
+                    <div class="input-group has-validation">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">@</span>
+                        </div>
+                        <input type="text" class="form-control"placeholder="Username" required>
+                        <div class="valid-feedback">Looks good!</div>
+                        <div class="invalid-feedback">Please choose a Username.</div>
+                    </div> 
+                </div>
+            </div>
+            <div class="row pt-3">
+                <div class="col-6">
+                    <label for="" class="form-lable pb-3">City</label>
+                    <input type="text" class="form-control" name="city" id="city" placeholder="City" required>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please porcide a vaild City.</div>
+                </div>
+                <div class="col-3">
+                    <label for="" class="form-lable pb-3">State</label>
+                    <input type="text" class="form-control" name="state" id="state" placeholder="State" required>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please porcide a vaild State.</div>
+                </div>
+                <div class="col-3">
+                    <label for="" class="form-lable pb-3">Zip</label>
+                    <input type="text" class="form-control" name="Zip" id="Zip" placeholder="Zip" required>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please porcide a vaild Zip.</div>
+                </div>
+                <div class="form-check m-3 pt-3">
+                    <input class="form-check-input" type="checkbox" id="myCheck"  name="remember" required>
+                    <label class="form-check-label" for="myCheck">Agree to terms and conditions.</label>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">You must agree before submitting.</div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
