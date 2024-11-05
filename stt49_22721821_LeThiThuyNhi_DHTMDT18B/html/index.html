@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px  auto;
+}
+    .wrapper{
+    background-color: aliceblue;
+    margin-top: 50px;
+    }
+    .text1 h1 {
+      background-color: aqua;
+    }
+
+</style>
+<body>
+    <div class="wrapper">
+        <div class="text1">
+            <h1>DANH SÁCH LƯƠNG NHÂN VIÊN</h1>
+        </div>  
+        <div class="row">
+            <div class="navbar">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#"  class="nav-link">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"  class="nav-link"   id="btnDK"  data-bs-toggle="modal"  data-bs-target="#myModal" >Thông tin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#"  class="nav-link" >Cập nhật lương</a>
+                    </li>
+                </ul>
+            </div>
+        </div>  
+        <div class="row">
+            <table class="table table-bordered table-hover"  id="tbDanhsach">
+                <tr class="table-primary">
+                    <th>STT</th>
+                    <th>Mã nhân sự</th>
+                    <th>Họ tên</th>
+                    <th>Ngày hợp đồng</th>
+                    <th>Chức vụ</th>
+                    <th>Bậc lương</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>912345678</td>
+                    <td>Hoàng Minh Vương</td>
+                    <td>12/05/2000</td>
+                    <td>nhân viên</td>
+                    <td>1.86</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="row">
+            <div class="col-12 text-center">
+                <h4 class="border-info">22721821: Lê Thị Thùy Nhi</h4>
+            </div>
+        </div>
+
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5>THÔNG TIN NHÂN VIÊN</h5>
+                        <button type="button"  class="close" data-dimis="modal">Close</button>
+                    </div>
+                    <div class="modal-body">
+                        <form action=""  class="form-control" id="form1">
+                            <div class="row form-group p-1">
+                                <div class="col-3 col-sm-3">
+                                    <label for="">Mã nhân viên</label>
+                                </div>
+                                <div class="col-6 col-sm-6">
+                                    <input type="text"  class="form-control" id="txtMa" placeholder="Mã nhân sự">
+                                </div>
+                                <div class="col-3 col-sm-3 p-2">
+                                    <span id="tbMa">*</span>
+                                </div>
+                            </div>
+
+                            <div class="row form-group p-1">
+                                <div class="col-3 col-sm-3">
+                                    <label for="">Tên nhân viên</label>
+                                </div>
+                                <div class="col-6 col-sm-6">
+                                    <input type="text"  class="form-control" id="txtHT" placeholder="Họ tên">
+                                </div>
+                                <div class="col-3 col-sm-3 p-2">
+                                    <span id="tbTen">*</span>
+                                </div>
+                            </div>
+
+                            <div class="row form-group p-1">
+                                <div class="col-3 col-sm-3">
+                                    <label for="">Ngày vào công ty</label>
+                                </div>
+                                <div class="col-6 col-sm-6">
+                                    <input type="date"  class="form-control" id="txtDate" placeholder="mm/đ/yyyy">
+                                </div>
+                                <div class="col-3 col-sm-3 p-2">
+                                    <span id="tbDate">*</span>
+                                </div>
+                            </div>
+
+                            <div class="row form-group p-1">
+                                <div class="col-3 col-sm-3">
+                                    <label for="">Chức vụ</label>
+                                </div>
+                                <div class="col-6 col-sm-6">
+                                    <div id="txtCV" class="form-control">
+                                        <input type="radio">Cán bộ quản lý
+                                    <input type="radio">Nhân viên
+                                    </div>
+                                    <div class="col-3 col-sm-3 p-2">
+                                        <span id="tbDate">*</span>
+                                    </div>
+                                    
+                                    <!-- <input type=""  >
+                                    <select  id="txtCV"  class="form-control">
+                                        <input type="radio">Cán bộ quản lý
+                                        <input type="radio">Nhân viên
+                                        
+                                    </select>                  -->
+                                </div>                       
+                            </div>
+                            <div class="row form-group p-1">
+                                <div class="col-3 col-sm-3">
+                                    <label for="">Bậc lương</label>
+                                </div>
+                                <div class="col-6 col-sm-6">
+                                    <input type=""   >
+                                    <section class="form-control" id="txtLuong">
+                                        <option value="Bậc 1">Bậc 1</option>
+                                        <option value="Bậc 2">Bậc 2</option>
+                                        <option value="Bậc 3">Bậc 3</option>
+                                    </section>
+                                </div>                           
+                            </div>
+
+                            <div class="row form-group p-1">
+                                <div class="col-3 col-sm-3">
+                                    <label for="">Hệ số</label>
+                                </div>
+                                <div class="col-6 col-sm-6">
+                                    <input type="text"  class="form-control" id="txtHeso" >
+                                </div>                         
+                            </div>
+
+                            <div class="row p-1">
+                                <div class="col-sm-6">
+                                    <input type="button" value="Thêm" id="btnSave" class="btn btn-info btn-block">                                   
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row p-1">
+                                <div class="col-sm-6">
+                                    <input type="button" value="Close" id="btnSave" class="btn btn-info btn-block">                                   
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+<script>
+    $(document).ready(function() {
+        var i = 2;
+        $("#btnDK").click(function() {
+            $("#myModal").modal();
+
+        })
+
+        function kiemTraMa() {
+            var mauKT = /^([0-9]{1}[0-9]{1})([0-9]{7})$/;
+            var maValue = $("#txtMa").val();
+            if (maValue == "") {
+                $("#tbMa").html("Bắt buộc nhập");
+                $("#tbMa").addClass("mauDo");
+                $("#tbMa").removeClass("mauXanh");
+                return false;
+            } else if (!mauKT.test(maValue)) {
+                $("#tbMa").html("Nhập sai");
+                $("#tbMa").addClass("mauDo");
+                $("#tbMa").removeClass("mauXanh");
+                return false;
+            } else {
+                $("#tbMa").html("Nhap dung ");
+                $("#tbMa").addClass("mauXanh");
+                $("#tbMa").removeClass("mauDo");
+                return true;
+            }
+        }
+        $("#txtMa").blur(kiemTraMa);
+
+        function kiemTraHT() {
+            var regex = /^([A-Z]{1}[a-z]+)(\s[A-Z]{1}[a-z]*)+$/;
+            var hoten = $("#txtHT").val();
+            if (hoten == "") {
+                $("#tbTen").html(" nhap lai");
+                $("#tbTen").addClass("mauDo");
+                $("#tbTen").removeClass("mauXanh");
+                return false;
+            } else if (regex.test(hoten) == false) {
+                $("#tbTen").html("Nhap sai");
+                $("#tbTen").addClass("mauDo");
+                $("#tbTen").removeClass("mauXanh");
+                return false;
+            } else {
+                $("#tbTen").html("Nhap dung roi");
+                $("#tbTen").addClass("mauXanh");
+                $("#tbTen").removeClass("mauDo");
+                return true;
+            }
+        };
+        $("#txtHT").blur(kiemTraHT);
+        $("#btnSave").click(function() {
+            var ma = $("#txtMa").val();
+            var ht = $("#txtHT").val();
+            var them = `
+            <tr>
+                <td>` + (i++) + `</td> 
+                    <td>` + ma + `</td>
+                    <td>` + ht + `</td>
+                </tr>
+                `;
+                $("#tbDanhSach").append(them);
+                $("#myModal").modal("hide");
+                return true;
+            });
+        });
+    </script>
+</body>
+</html>
