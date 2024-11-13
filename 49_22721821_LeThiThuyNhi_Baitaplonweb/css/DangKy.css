@@ -1,0 +1,149 @@
+.container-fuld{
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:monospace;
+}
+.menu nav ul li a{
+    color: black;
+    font-size: 20px;
+    font-weight:bold;
+    margin-left: 20px;
+}
+nav ul li input{
+    margin-left: 30px; 
+    border: none;
+    border-bottom:1px solid black ;
+}
+/* Đổi màu */
+.nav-link:hover {
+    color: rgb(31, 208, 49);
+}
+#sp ul li:hover{
+    background-color: rgb(252, 247, 247);
+}
+#sp ul li a{
+    font-size: 15px;
+}
+#sp1 ul li:hover{
+    background-color: rgb(252, 247, 247);
+}
+.nav-link:active {
+    color: rgb(31, 208, 49);
+}
+#sp:hover{
+    color: rgb(31, 208, 49);
+}
+#sp:active{
+    color: rgb(31, 208, 49);
+}
+
+/* .... */
+#khung{
+    height: 1100px;
+    /* background-color:rgb(191, 165, 165) ; */
+    background-color: rgb(175, 191, 191);
+}
+.form{
+    height: 90%;
+    width: 60%;
+    background-color:white ;
+}
+
+.form{
+    margin-top: 30px;
+}
+.body{
+    border-bottom: 1px solid rgb(55, 45, 45);
+}
+
+
+/* đổi màu chữ */
+.body h1{
+    color: rgb(7, 180, 100);
+    text-align: center;
+}
+
+
+.form-group img{
+    width: 5%;
+}
+.form-group{
+    margin-top: 20px;
+}
+.form-group label{
+    margin-bottom: 10px;
+}
+
+
+/* đổi màu button */
+#btndk{
+    background-color:rgb(46, 200, 128) ;
+    color: white;
+    font-size: 25px;
+}
+#btnh{
+    background-color:rgb(46, 200, 128) ;
+    color: white;
+    font-size: 25px;
+}
+
+/*  */
+#footer a{
+    color: black;
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+#footer h5{
+    color: black;
+    font-size: 20px;
+}
+#footer p{
+    color: black;
+    font-size: 14px;
+}
+#footer ul li{
+    float: left;
+} 
+
+/* định dạng bảng lúc đăng ký hiện ra thông tin */
+/* Định dạng bảng đăng ký */
+#registrationTable {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    
+}
+
+
+#registrationTable th, #registrationTable td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+#registrationTable thead {
+    background-color: #79acc9;
+    color: #b92222;
+}
+
+#registrationTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#registrationTable tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+#registrationTable td {
+    font-size: 16px;
+    color: #810b0b;
+}
+
+/* Căn giữa bảng */
+.container {
+    max-width: 800px;
+    margin: auto;
+}
